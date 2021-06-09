@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".acceptorregistrationform"
+    android:background="@drawable/backgroundimage"
+    >
+
+    <TextView
+        android:id="@+id/accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:text="Requst for Accepting "
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#000000"
+
+
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/accept"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/et_custom"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/fathername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/et_custom"
+        android:hint="Father Name"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/fathername"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/et_custom"
+        android:hint="Contact no"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+
+        android:textSize="15sp" />
+    <EditText
+        android:id="@+id/cnic"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="CNIC"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:layout_below="@id/contact"
+        android:inputType="textPersonName"
+        android:background="@drawable/et_custom"
+        android:textSize="15sp"
+
+        />
+    <EditText
+        android:id="@+id/noofperson"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="No Of Person"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:layout_below="@id/cnic"
+        android:inputType="textPersonName"
+        android:background="@drawable/et_custom"
+        android:textSize="15sp"
+
+        />
+    <TextView
+        android:id="@+id/want"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="what you want"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:layout_below="@id/noofperson"
+
+        />
+    <CheckBox
+        android:id="@+id/f1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/want"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:text="FOOD"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+    <CheckBox
+        android:id="@+id/cloth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/f1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:text="CLOTHES"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+    <CheckBox
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cloth"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:text="BLOOD"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/dess"
+        android:layout_width="372dp"
+        android:layout_height="138dp"
+        android:layout_below="@+id/b1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/et_custom"
+        android:hint="comments"
+        android:gravity="start"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+
+        android:textSize="15sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:layout_below="@+id/dess"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginRight="83dp"
+        android:background="@drawable/buttons"
+        android:text="Submit"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+</RelativeLayout>
